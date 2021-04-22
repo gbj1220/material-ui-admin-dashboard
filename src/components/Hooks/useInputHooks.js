@@ -4,7 +4,7 @@ import { matches } from "validator";
 function useInputHooks() {
   const [input, setInput] = useState("");
   const [inputError, setInputError] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("This is the Error Message");
+  const [errorMessage, setErrorMessage] = useState("");
 
   function handleInputOnChange(e) {
     let inputValue = e.target.value;
